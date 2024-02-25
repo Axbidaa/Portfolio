@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#content">Content Highlights</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+  </nav>
+
+  <section id="home">
+    <left>
+
+    </left>
+    <img src="images/profile_picture.jpg" style="width:45%;">
+    <right>
+      <img src="images/tagline.png" style="width:130%;">
+    </right>
+  </section>
+
+  <hr style="width:75%; border-width: 0px ; background-color: rgb(223, 223, 223); height: 2px;">
+
+  <section id="awards">
+    <h1>AWARDS</h1>
+    <!-- Cards container -->
+    <div class="container">
+      <ul class="cards">
+
+        <!-- Card 1 -->
+        <li class="card">
+          <div>
+            <h3 class="card-title">Year Representative</h3>
+            <div class="card-content">
+              <img src="images/year_rep.png" style="width: 100%;">
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="card">
+          <div>
+            <h3 class="card-title">Mentorship</h3>
+            <div class="card-content">
+              <img src="images/mentor.png" style="width: 100%;">
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 3 -->
+        <li class="card">
+          <div>
+            <h3 class="card-title">Film-making</h3>
+            <div class="card-content">
+              <img src="images/short-film.png" style="width: 100%;height: 320px;">
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <footer class="page-footer">
+    </footer>
+
+
+    <!--  -->
+  </section>
+
+  <hr style="width:75%; border-width: 0px ; background-color: rgb(223, 223, 223); height: 2px;">
+
+  <section id="projects">
+    <h1>PROJECTS</h1>
+    <!-- Cards container -->
+    <div class="container">
+      <ul class="cards">
+
+        <!-- Card 1 -->
+        <li class="card">
+          <div id="projects-info">
+            <h3 class="card-title">Python based game of Blackjack</h3>
+            <div class="card-content">
+              <img src="images/blackjack.png" style="width: 100%;">
+              <footer>
+                <a href="https://gitfront.io/r/Abidur/sUAH2kWeghbf/Personal-Projects/blob/Games/blackjack/blackjack.py"
+                  target="_blank">VIEW ➡️</a>
+              </footer>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr style="width:75%; border-width: 0px ; background-color: rgb(223, 223, 223); height: 2px;">
+
+  <section id="content">
+    <h1>CONTENT HIGHLIGHTS</h1>
+    <main style="padding-top: 30px;">
+      <info>
+        <p>
+          As a dedicated hobbyist in the realm of content creation, I find immense joy in filming vlogs and crafting
+          dynamic gaming montages for YouTube.
+        </p>
+        <br>
+        <div class="contact-info">
+          <img src="images/youtube.png">
+          <a href="https://www.youtube.com/@abidoo2588" target="_blank">/ Abidoo</a>
+          <p></p>
+        </div>
+      </info>
+
+      <video1>
+        <img src="images/video1.jpg" style="width: 100%;">
+        <p>
+          Editing for a short-film that won 1st prize in short-film making competition TSMU
+        </p>
+        <footer>
+          <a href="https://www.youtube.com/watch?v=TcQLFTYK57A&t=2s" target="_blank">WATCH NOW ➡️</a>
+        </footer>
+      </video1>
+      <video2>
+        <img src="images/video2.jpg" style="width: 100%;">
+        <p>
+          A Valorant montage with vital intricate elements: speed-ramps, cinematics, transitions and more
+        </p>
+        <footer>
+          <a href="https://www.youtube.com/watch?v=Nj7CxecB3Qg" target="_blank">WATCH NOW ➡️</a>
+        </footer>
+        </video>
+    </main>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="container-form">
+      <form >
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="text" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group" style="text-align: center;">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <img src="images/gmail.png" alt="">
+      <p>nezumrashid@gmail.com‎ ‎ ‎ ‎ </p>
+      <img src="images/linkedin.png" alt="">
+      </p>
+      
+      <p>Mohammed Abidur Rashid</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

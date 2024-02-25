@@ -1,0 +1,295 @@
+/* Theme */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+section {
+  padding: 50px;
+  height: 100vh;
+}
+
+#contact {
+  background-color: black;
+  color: white;
+}
+
+home {
+  padding: 60px;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+left {
+  float: left;
+  width: 70%;
+}
+
+right {
+  float: right;
+  width: 30%;
+  margin-top: 10%;
+  margin-right: 15%;
+}
+
+/* Cards */
+:root {
+  --black: black;
+  --white: #fff;
+  --thumb: #edf2f4;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 1em;
+}
+
+.cards {
+  display: grid;
+  grid-auto-columns: 49.75%;
+  grid-column-gap: 0px;
+  grid-auto-flow: column;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+
+  gap: 5px;
+  width: 1000px;
+}
+
+.card {
+  width: auto;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+  transition: all 0.2s;
+  height: 380px
+}
+
+.card:hover {
+  color: var(--white);
+  background: var(--black);
+}
+
+.card .card-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card .card-content {
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.card .card-link-wrapper {
+  margin-top: auto;
+}
+
+.cards::-webkit-scrollbar {
+  height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+.cards::-webkit-scrollbar-track {
+  background: var(--thumb);
+}
+
+/* Grid layout */
+
+main {
+  display: grid;
+  grid-template-areas:
+    "info video1 video2"
+  ;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 50px;
+}
+
+info {
+  grid-area: info;
+  font-size: 25px;
+  width: 100%;
+}
+
+video1 {
+  grid-area: video1;
+  transition: 0.4s;
+  padding: 10px;
+}
+
+video2 {
+  grid-area: video2;
+  transition: 0.4s;
+  padding: 10px;
+
+}
+
+video1:hover {
+  background: black;
+  color: white;
+}
+
+video2:hover {
+  background: black;
+  color: white;
+}
+
+footer {
+  font-weight: bold;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(134, 213, 255);
+}
+
+/* Projects */
+.projects-info {
+
+  margin: 2000px;
+}
+
+/* Contact */
+.contact-info {
+  display: flex;
+  align-items: center;
+  /* Align items vertically center */
+}
+
+.contact-info img {
+  width: 30px;
+  /* Set the width as per your requirement */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 10px;
+  /* Add some spacing between the image and text */
+}
+
+.contact-info p {
+  margin: 0;
+  /* Remove default margin */
+}
+
+/* Form */
+.container-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(97, 97, 97, 0.71);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgb(23, 23, 23);
+}
+
+textarea {
+  height: 120px;
+}
+
+input {
+  padding: 20px 12px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
