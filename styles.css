@@ -1,3 +1,4 @@
+/*====================================================== Desktop ======================================================*/
 /* Theme */
 
 body {
@@ -63,17 +64,25 @@ h2 {
   font-size: 50px;
 }
 
-left {
-  float: left;
-  width: 70%;
+.column-container { 
+  display: flex; 
+  height: 100%;
+} 
+ 
+.column { 
+  padding: 10px; 
 }
 
-right {
-  float: right;
-  width: 30%;
-  margin-top: 10%;
-  margin-right: 15%;
+#profile-photo {
+  flex: 1;
 }
+
+#profile-info {
+  flex: 2;
+  justify-content: center;
+}
+
+
 
 /* Cards */
 :root {
@@ -292,4 +301,66 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+/*====================================================== Mobile devices ======================================================*/
+@media (max-width: 768px) {
+  nav ul li a {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #home {
+    margin-top: 60px;
+  }
+
+  section {
+    padding: 20px;
+    height: 100svh;
+  }
+
+  .column-container { 
+    display: flex; 
+    height: 100%;
+    flex-direction: column;
+  } 
+
+  #home img {
+    width: 100%;
+  }
+
+  .container {
+    width: 60vw;
+
+  }
+
+  .cards {
+    grid-template-columns: auto;
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "info"
+      "video1"
+      "video2";
+    width: 100%;
+  }
+
+  video1,
+  video2 {
+    padding: 10px;
+    width: 100%;
+  }
 }
