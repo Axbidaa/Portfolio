@@ -314,6 +314,8 @@ input[type="submit"]:hover {
     text-align: center;
   }
 
+  
+
   #home {
     margin-top: 60px;
   }
@@ -321,6 +323,10 @@ input[type="submit"]:hover {
   section {
     padding: 20px;
     height: 100svh;
+  }
+
+  #content {
+    height: 120svh;
   }
 
   .column-container { 
@@ -363,4 +369,26 @@ input[type="submit"]:hover {
     padding: 10px;
     width: 100%;
   }
+
+  .desktop-contact {
+    display: none;
+  }
+
+  .mobile-contact {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    flex-direction: column;
+  }
+  
+  .mobile-contact-details {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    margin-right: 20px; /* Adjust as needed */
+  }
+  
+  .mobile-contact-details img {
+    margin-right: 10px; /* Adjust as needed */
+    
+  }
+
 }
