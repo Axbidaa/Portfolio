@@ -91,7 +91,7 @@ home {
 
 #profile-info {
   flex: 1;
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 
@@ -101,8 +101,9 @@ home {
 
 .hello-world {
   opacity: 0%;
+  margin-bottom: 1px;
   border-right: 0.25vw solid;
-  font-size: 2vw;
+  font-size: 35px;
   letter-spacing: 10px;
   font-family: monospace;
   width: 100%;
@@ -337,7 +338,6 @@ input[type="submit"]:hover {
 
 .fa-brands.fa-linkedin.fa-2xl:hover {
   color: white;
-  
 }
 
 /*====================================================== Mobile devices ======================================================*/
