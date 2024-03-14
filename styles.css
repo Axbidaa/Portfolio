@@ -351,7 +351,9 @@ input[type="submit"]:hover {
     text-align: center;
   }
 
-  
+  .hello-world {
+    font-size: 20px;
+  }
 
   #home {
     margin-top: 60px;
@@ -363,7 +365,7 @@ input[type="submit"]:hover {
   }
 
   #content {
-    height: 120svh;
+    height: auto;
   }
 
   .column-container { 
@@ -374,22 +376,6 @@ input[type="submit"]:hover {
 
   #home img {
     width: 100%;
-  }
-
-  .container {
-    width: 60vw;
-
-  }
-
-  .cards {
-    grid-template-columns: auto;
-    width: 100%;
-  }
-
-  .card {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
   }
 
   main {
@@ -403,7 +389,7 @@ input[type="submit"]:hover {
 
   video1,
   video2 {
-    padding: 10px;
+    padding: 0px;
     width: 100%;
   }
 
