@@ -18,7 +18,6 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#content">Content Highlights</a></li>
       <li><a href="#contact">Contact</a></li>
-
     </ul>
   </nav>
 
@@ -93,31 +92,30 @@
   <section id="contact">
     <h2>Contact Me</h2>
 
-    <div class="container-form">
-      <form>
-        <div class="form-group">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Your Email:</label>
-          <input type="text" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <div class="form-group" style="text-align: center;">
-          <input type="submit" value="Submit">
-        </div>
+    <div class="contact-container">
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="84e64012-c912-499b-963a-0e99340a6e77">
+        <input type="text" class="contact-inputs" id="name" name="name" placeholder="Name" required>
+        <input type="text" class="contact-inputs" id="email" name="email" placeholder="Email" required>
+        <textarea class="contact-inputs" id="message" name="message" placeholder="Message" required></textarea>
+        <button type="submit" style="--clr:#1e9bff">Submit</button>
       </form>
     </div>
 
-    <a target="_blank" href="https://www.linkedin.com/in/mohammed-abidur-rashid-51bb94244/">
-      <i class="fa-brands fa-linkedin fa-2xl"></i>
-    </a>
-
-
+    <div class="contact-icons">
+      <ul class="icons-list">
+        <li style="--clr:#1877f2">
+          <a target="_blank" href="https://www.linkedin.com/in/mohammed-abidur-rashid-51bb94244/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li style="--clr:#ff0000">
+          <a target="_blank" href="https://www.youtube.com/@abidoo2588">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
 
   </section>
 

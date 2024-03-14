@@ -1,5 +1,9 @@
 /*====================================================== Desktop ======================================================*/
 
+* {
+  list-style: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -48,11 +52,6 @@ nav ul li a:hover {
 section {
   padding: 50px;
   height: 90vh;
-}
-
-#contact {
-  background-color: black;
-  color: white;
 }
 
 /* Home */
@@ -139,79 +138,6 @@ home {
   }
 }
 
-/* Cards */
-:root {
-  --black: black;
-  --white: #fff;
-  --thumb: #edf2f4;
-}
-
-.container {
-  padding: 0 15px;
-  margin: 0 auto;
-  width: 1000px;
-}
-
-.cards {
-  display: grid;
-  grid-auto-columns: 49.75%;
-  grid-column-gap: 0px;
-  grid-auto-flow: column;
-  padding: 25px 0px;
-  list-style: none;
-  overflow-x: scroll;
-
-  gap: 5px;
-  width: 1000px;
-}
-
-.card {
-  width: auto;
-  flex-direction: column;
-  padding: 20px;
-  background: var(--white);
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-  scroll-snap-align: start;
-  transition: all 0.2s;
-  height: 380px
-}
-
-.card:hover {
-  color: var(--white);
-  background: var(--black);
-}
-
-.card .card-title {
-  font-size: 20px;
-  text-align: center;
-}
-
-.card .card-content {
-  margin: 20px 0;
-  justify-content: center;
-}
-
-.card .card-link-wrapper {
-  margin-top: auto;
-}
-
-.cards::-webkit-scrollbar {
-  height: 12px;
-}
-
-.cards::-webkit-scrollbar-thumb,
-.cards::-webkit-scrollbar-track {
-  border-radius: 92px;
-}
-
-.cards::-webkit-scrollbar-thumb {
-  background: var(--black);
-}
-
-.cards::-webkit-scrollbar-track {
-  background: var(--thumb);
-}
 
 /* Content Highlights */
 
@@ -263,81 +189,116 @@ a {
   color: grey;
 }
 
-a:hover {
-  text-decoration: none;
-  color: rgb(134, 213, 255);
-}
+
 
 /* Projects */
-.projects-info {
-  margin: 2000px;
-}
 
 
 /* Contact Me */
-.container-form {
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 20px;
+#contact {
   background-color: black;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(97, 97, 97, 0.71);
+  color: white;
 }
 
-h2 {
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  height: 60%;
+  align-items: center;
+}
+
+#contact h2{
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 100;
 }
 
-.form-group {
-  margin-bottom: 20px;
+.contact-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-textarea {
-  color: white;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  background-color: rgb(23, 23, 23);
-}
-
-textarea {
-  height: 120px;
-}
-
-input {
-  padding: 20px 12px;
-  margin: 4px 0;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
+.contact-inputs {
+  width: 500px;
+  height: 40px;
   border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-input[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-.fa-brands.fa-linkedin.fa-2xl {
-  color: rgb(121, 121, 121);
-}
-
-.fa-brands.fa-linkedin.fa-2xl:hover {
+  font-weight: 500;
+  background-color: rgb(20, 20, 20);
   color: white;
+  border-radius: 50px;
+  padding-left: 25px;
+  
+}
+
+.contact-form textarea {
+  height: 150px;
+  padding-top: 15px;
+  border-radius: 25px;
+}
+
+.contact-form button {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 15px 30px;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  font-weight: 400;
+  gap: 10px;
+  border:none;
+  border-radius: 50px;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  transition: 0.5s;
+}
+
+.contact-form button:hover {
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+
+.contact-icons {
+  display: flex;
+  
+}
+
+.icons-list {
+  position: relative;
+  display: flex;
+  gap: 25px;
+}
+
+.icons-list li {
+  display: flex;
+  position: relative;
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icons-list li a{
+  position: relative;
+  text-decoration: none;
+  color: var(--clr);
+  z-index: 10;
+  font-size: 2em;
+  transition: 0.5s;
+}
+
+.icons-list li:hover a{
+  font-size: 3em;
+  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
 
 /*====================================================== Mobile devices ======================================================*/
@@ -391,6 +352,10 @@ input[type="submit"]:hover {
   video2 {
     padding: 0px;
     width: 100%;
+  }
+
+  .contact-inputs {
+    width: 80vw;
   }
 
 }
