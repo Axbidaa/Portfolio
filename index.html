@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- Nav bar -->
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -21,6 +22,7 @@
     </ul>
   </nav>
 
+  <!-- Home -->
   <section id="home">
     <div class="column-container">
       <div id="profile-photo" class="column">
@@ -42,6 +44,7 @@
 
   <hr style="width:75%; border-width: 0px ; background-color: rgb(223, 223, 223); height: 2px;">
 
+  <!-- Awards -->
   <section id="awards">
     <h1>AWARDS</h1>
 
@@ -57,38 +60,78 @@
 
   <hr style="width:75%; border-width: 0px ; background-color: rgb(223, 223, 223); height: 2px;">
 
+  <!-- Content -->
   <section id="content">
     <h1>CONTENT HIGHLIGHTS</h1>
     <main style="padding-top: 30px;">
-      <info>
-        <p>
-          As a dedicated hobbyist in the realm of content creation, I find immense joy in filming vlogs and crafting
-          dynamic gaming montages for YouTube.
-        </p>
-        <br>
-      </info>
+      <div class="info">
+        <div class="info-text">
+          <p>
+            As a dedicated hobbyist in the realm of content creation, I find immense joy in filming vlogs and crafting
+            dynamic gaming montages for YouTube.
+          </p>
+        </div>
+        <div class="info-links">
+          <p>links:</p>
+          <ul class="info-list">
+            <li><a href="">Whispers in the Wind</a></li>
+            <li><a href="">Die for you</a></li>
+            <li><a href="">Monerlog</a></li>
+            <li><a href="">A trip to the top</a></li>
+          </ul>
+        </div>
+      </div>
 
-      <video1>
-        <img src="images/video1.jpg" style="width: 100%;">
-        <p>
-          Editing for a short-film that won 1st prize in short-film making competition TSMU
-        </p>
-        <footer>
-          <a href="https://www.youtube.com/watch?v=TcQLFTYK57A&t=2s" target="_blank">WATCH NOW ➡️</a>
-        </footer>
-      </video1>
-      <video2>
-        <img src="images/video2.jpg" style="width: 100%;">
-        <p>
-          A Valorant montage with vital intricate elements: speed-ramps, cinematics, transitions and more
-        </p>
-        <footer>
-          <a href="https://www.youtube.com/watch?v=Nj7CxecB3Qg" target="_blank">WATCH NOW ➡️</a>
-        </footer>
-        </video>
+      <div class="wrapper">
+        <div class="container">
+          <input type="radio" name="slide" id="c1" checked>
+          <label for="c1" class="card">
+            <div class="row">
+              <div class="icon">1</div>
+              <div class="description">
+                <h4>short film</h4>
+                <p>1st position in short-film making competition at TSMU</p>
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="slide" id="c2">
+          <label for="c2" class="card">
+            <div class="row">
+              <div class="icon">2</div>
+              <div class="description">
+                <h4>gaming montage</h4>
+                <p>A valorant montage with intricate video editing elements</p>
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="slide" id="c3">
+          <label for="c3" class="card">
+            <div class="row">
+              <div class="icon">3</div>
+              <div class="description">
+                <h4>Log of the mind</h4>
+                <p>A log sharing my personal experiences</p>
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="slide" id="c4">
+          <label for="c4" class="card">
+            <div class="row">
+              <div class="icon">4</div>
+              <div class="description">
+                <h4>A trip to the top of a mountain</h4>
+                <p>A personalised vlog sharing my journey to the top of a mountain</p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+
     </main>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Me</h2>
 
@@ -101,6 +144,8 @@
         <button type="submit" style="--clr:#1e9bff">Submit</button>
       </form>
     </div>
+
+
 
     <div class="contact-icons">
       <ul class="icons-list">

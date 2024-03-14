@@ -140,55 +140,170 @@ home {
 
 
 /* Content Highlights */
+#content {
+  height: auto;
+}
 
 main {
   display: grid;
   grid-template-areas:
-    "info video1 video2"
+    "info video"
   ;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr;
   gap: 50px;
 }
 
-info {
+.info {
+  display: flex;
+  flex-direction: column;
   grid-area: info;
   font-size: 25px;
   width: 100%;
 }
 
-video1 {
-  grid-area: video1;
-  transition: 0.4s;
-  padding: 10px;
+.info-links {
+  margin-bottom: 50px;
+  padding-left: 20px;
+  height: 100%;
 }
 
-video2 {
-  grid-area: video2;
-  transition: 0.4s;
-  padding: 10px;
-
+.info-list li {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
 }
 
-video1:hover {
-  background: black;
-  color: white;
-}
-
-video2:hover {
-  background: black;
-  color: white;
-}
-
-footer {
-  font-weight: bold;
-  text-align: right;
-}
-
-a {
+.info-list a{
+  display: block;
+  padding: 10px 20px;
+  font-family: Poppins;
+  font-size: 15px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: grey;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
+.info-list li:hover a{
+  color: white;
+  background-color: black;
+  letter-spacing: 2px;
+}
+
+.info-list li:hover li{
+  color: white;
+  background-color: black;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.wrapper {
+  grid-area: video; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card > .row > .description {
+  padding-left: 20px;
+  border-radius: 20px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+  margin-top: 0px;
+}
+
+.description h4 {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.wrapper input {
+  display: none;
+}
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url('images/whispers.jpg');
+}
+.card[for="c2"] {
+  background-image: url('images/valorant.jpg');
+}
+.card[for="c3"] {
+  background-image: url('images/monerlog.jpg');
+}
+.card[for="c4"] {
+  background-image: url('images/jabal_hafeet.jpg');
+}
 
 
 /* Projects */
@@ -307,11 +422,17 @@ a {
     padding: 10px;
   }
 
+  section {
+    padding: 20px;
+    height: 100svh;
+  }
+
   h1 {
     font-size: 20px;
     text-align: center;
   }
 
+  /* Home */
   .hello-world {
     font-size: 20px;
   }
@@ -320,11 +441,11 @@ a {
     margin-top: 60px;
   }
 
-  section {
-    padding: 20px;
-    height: 100svh;
+  #home img {
+    width: 100%;
   }
 
+  /* Content */
   #content {
     height: auto;
   }
@@ -335,23 +456,21 @@ a {
     flex-direction: column;
   } 
 
-  #home img {
-    width: 100%;
-  }
-
   main {
     grid-template-columns: 1fr;
     grid-template-areas:
       "info"
-      "video1"
-      "video2";
+      "video";
     width: 100%;
   }
 
-  video1,
-  video2 {
-    padding: 0px;
+  .info {
     width: 100%;
+    grid-area: info;
+  }
+
+  .wrapper {
+    display: none;
   }
 
   .contact-inputs {
