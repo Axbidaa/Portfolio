@@ -374,6 +374,7 @@ input:checked + label .description {
 }
 
 .contact-form button:hover {
+  color: black;
   letter-spacing: 0.25em;
   background: var(--clr);
   box-shadow: 0 0 35px var(--clr);
@@ -387,7 +388,7 @@ input:checked + label .description {
 .icons-list {
   position: relative;
   display: flex;
-  gap: 25px;
+  gap: 5px;
 }
 
 .icons-list li {
@@ -405,15 +406,16 @@ input:checked + label .description {
 .icons-list li a{
   position: relative;
   text-decoration: none;
-  color: var(--clr);
+  color: rgb(59, 59, 59);
   z-index: 10;
   font-size: 2em;
   transition: 0.5s;
 }
 
 .icons-list li:hover a{
+  color: white;
   font-size: 3em;
-  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+  filter: drop-shadow(0 0 20px white) ;
 }
 
 /*====================================================== Mobile devices ======================================================*/
