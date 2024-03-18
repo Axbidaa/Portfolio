@@ -145,6 +145,10 @@ home {
   justify-content: flex-start;
 }
 
+.projects-content {
+  height: 100%;
+}
+
 /* Content Highlights */
 #content {
   height: auto;
