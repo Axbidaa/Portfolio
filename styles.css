@@ -139,7 +139,9 @@ home {
 }
 
 /* Projects */
-
+#Projects {
+  display: flex;
+}
 
 /* Content Highlights */
 #content {
@@ -306,10 +308,6 @@ input:checked + label .description {
 .card[for="c4"] {
   background-image: url('images/jabal_hafeet.jpg');
 }
-
-
-/* Projects */
-
 
 /* Contact Me */
 #contact {
