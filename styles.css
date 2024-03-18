@@ -48,7 +48,6 @@ nav ul li a:hover {
 }
 
 /* Section */
-
 section {
   padding: 50px;
   height: 90vh;
@@ -139,8 +138,10 @@ home {
 }
 
 /* Projects */
-#Projects {
+#projects {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Content Highlights */
