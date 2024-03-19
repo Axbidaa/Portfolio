@@ -11,7 +11,7 @@ body {
 
 h1,
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 50px;
 }
 
@@ -51,12 +51,12 @@ nav ul li a:hover {
 /* Section */
 section {
   padding: 50px;
-  height: 90vh;
+  height: 100vh;
 }
 
 /* Home */
-home {
-  padding: 60px;
+#home {
+  padding-top: 0px;
 }
 
 .column-container { 
@@ -140,14 +140,89 @@ home {
 
 /* Projects */
 #projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  min-height: 100vh;
+  height: auto;
+}
+
+#projects h1{
+  margin-bottom: 40px;
 }
 
 .projects-content {
-  height: 100%;
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
 }
+
+.projects-row {
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+.projects-card {
+  position: relative;
+  height: 100%;
+  width: 380px;
+  background-color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projects-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  opacity: 0%;
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.711);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.overlay-text:hover {
+  opacity: 100% ;
+}
+
+.overlay-text  p{
+  font-family: Poppins;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.overlay-text a{
+  text-decoration: none;
+  background: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+
+.overlay-text a:hover{
+  letter-spacing: 0.1rem;
+  background-color: white;
+  color: black;
+}
+
+
 
 /* Content Highlights */
 #content {
