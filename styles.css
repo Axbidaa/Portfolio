@@ -248,6 +248,11 @@ section {
   100% { transform: rotate(360deg); }
 }
 
+#personal-portfolio {
+  line-height: 300px;
+}
+
+
 /* Content Highlights */
 #content {
   height: auto;
@@ -545,6 +550,7 @@ input:checked + label .description {
   /* Home */
   .hello-world {
     font-size: 20px;
+    padding-top: 20px;
   }
 
 
@@ -569,10 +575,15 @@ input:checked + label .description {
   .projects-row {
     flex-direction: column;
     gap: 5px;
+    height: 800px;
   }
 
   #projects {
     min-height: 0px;
+  }
+
+  #personal-portfolio {
+    line-height: 265px;
   }
 
   /* Content */
