@@ -2,6 +2,7 @@
 
 * {
   list-style: none;
+  font-family: Poppins, sans-serif;
 }
 
 body {
@@ -74,9 +75,11 @@ section {
 }
 
 #profile-photo img{
+  opacity: 0%;
   width: 80%;
   border-radius: 50%;
-  animation-name: imagePop;
+  animation: imagePop forwards;
+  animation-delay: 0.5s;
   animation-duration: 1s;
   float: right;
 }
@@ -85,6 +88,9 @@ section {
   from{
     transform: translateX(20%);
     opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
 
@@ -112,7 +118,7 @@ section {
     textAppear 0.1s  forwards,
     typing 1s steps(12),
     cursor 0.4s step-end infinite alternate;  
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
 }
 
 .introduction {
@@ -120,7 +126,7 @@ section {
   font-size: 25px;
   margin-top: 0px;
   animation: textAppear 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 2.5s;
   font-family: Poppins, sans-serif;
 }
 
@@ -162,6 +168,8 @@ section {
 }
 
 .projects-card {
+  text-align: center;
+  color: white;
   position: relative;
   height: 100%;
   width: 100%;
@@ -224,6 +232,21 @@ section {
 }
 
 
+.loader {
+  margin: auto;
+  margin-top: 90px;
+  border: 10px solid #3a3a3a; /* Light grey */
+  border-top: 10px solid #ffffff; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 /* Content Highlights */
 #content {
@@ -243,7 +266,7 @@ main {
   display: flex;
   flex-direction: column;
   grid-area: info;
-  font-size: 25px;
+  font-size: 20px;
   width: 100%;
 }
 
