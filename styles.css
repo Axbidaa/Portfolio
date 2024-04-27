@@ -527,11 +527,14 @@ input:checked + label .description {
 @media (max-width: 768px) {
   nav ul li a {
     padding: 10px;
+    font-size: 12px;
   }
 
   section {
-    padding: 20px;
-    height: 100svh;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
   }
 
   h1 {
@@ -544,12 +547,22 @@ input:checked + label .description {
     font-size: 20px;
   }
 
+
+  .column-container { 
+    display: block;
+  } 
+
   #home {
-    margin-top: 60px;
+    padding-top: 60px;
+
   }
 
   #home img {
     width: 100%;
+  }
+
+  #profile-info.column{
+    padding: 0px;
   }
 
   /* Projects */
@@ -558,16 +571,14 @@ input:checked + label .description {
     gap: 5px;
   }
 
+  #projects {
+    min-height: 0px;
+  }
+
   /* Content */
   #content {
     height: auto;
   }
-
-  .column-container { 
-    display: flex; 
-    height: 100%;
-    flex-direction: column;
-  } 
 
   main {
     grid-template-columns: 1fr;
@@ -580,6 +591,10 @@ input:checked + label .description {
   .info {
     width: 100%;
     grid-area: info;
+  }
+
+  .info-list {
+    padding-left: 0px;
   }
 
   .wrapper {
